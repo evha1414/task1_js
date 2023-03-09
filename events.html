@@ -20,7 +20,7 @@
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <div class="collapse navbar-collapse position-absolute top-50 end-0 translate-middle-y" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
@@ -89,45 +89,55 @@
   </section>
     </header>
     <main class="container bg-body-tertiary">
-      <div>
-        <div class="row p-4 d-flex flex-wrap">
+        <div class="d-flex flex-wrap text-center fw-bold">
           <nav class="navbar bg-body-tertiary">
             <fieldset>
-              <label>
-                Category
-                  <input type="checkbox" name="position1" value="category">
+              <label for="">
+                Collectivities Party
+                  <input type="checkbox" name="position1" value="category" class="valores">
+              </label>
+              <label for="">
+                Jurassic Park
+                  <input type="checkbox" name="position2" value="category" class="valores">
               </label>
               <label>
-                Category
-                  <input type="checkbox" name="position2" value="category">
-              </label>
+               Comicon
+                  <input type="checkbox" name="position3" value="category" class="valores">
+              </label for="">
               <label>
-                Category
-                  <input type="checkbox" name="position3" value="category">
+                Electronic Fest
+                  <input type="checkbox" name="position4" value="category" class="valores">
               </label>
-              <label>
-                Category
-                  <input type="checkbox" name="position4" value="category">
+              <label for="">
+                10K for life
+                  <input type="checkbox" name="position5" value="category" class="valores">
               </label>
-              <label>
-                Category
-                  <input type="checkbox" name="position5" value="category">
+              <label for="">
+                Just for your Kitchen
+                  <input type="checkbox" name="position4" value="category" class="valores">
+              </label>
+              <label for="">
+                Batman
+                  <input type="checkbox" name="position5" value="category" class="valores">
               </label>
             </fieldset>
-          <div class="col-sm-4">
+          <div class="col-sm-5">
             <div class="container-fluid">
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            </form>
+              <form class="d-flex" role="search">
+                  <div class="container-fluid">
+                <input id="buscador" class="form-control me-2" type="text" placeholder="Search" aria-label="Search">
+                <button id="boton" class="btn btn-outline-secondary btn-sm" type="submit">Search</button>
+              </form>
             </div>
         </div>
+         <ul id="lista" class="list-group"></ul>   
+          </div>
       </nav>
-    </div> 
-      </div>
       <section>
-          <div class="container text-center">
-            <div class="row p-3 d-flex flex-wrap justify-content-center aling-item-center gap-3">
-              <div class="card bg-body-secondary" style="width: 18rem; height: 21rem;">
+        <div id="container-events" class="d-flex flex-wrap justify-content-center aling-item-center gap-3">
+          <div id="container" class="container text-center">
+            <div class="row p-3 d-flex flex-wrap jbg-body-secondary justify-content-center aling-item-center gap-3">
+              <div class="card" style="width: 18rem; height: 21rem;">
                 <img src="./assets/Cinema.jpg" class="card-img-top rounded-4 p-2" alt="...">
                 <div class="card-body">
                   <h5 class="card-title">Título</h5>
@@ -136,7 +146,7 @@
                   <a href="./details.html" class="btn btn-secondary position-absolute bottom-1 end-1">Details</a>
                 </div>
               </div>
-              <div class="card bg-body-secondary" style="width: 18rem; height: 21rem;">
+              <div class="card" style="width: 18rem; height: 21rem;">
                 <img src="./assets/Costume_Party.jpg" class="card-img-top rounded-4 p-2" alt="...">
                 <div class="card-body">
                   <h5 class="card-title">Título</h5>
@@ -145,7 +155,7 @@
                   <a href="./details.html" class="btn btn-secondary position-absolute bottom-1 end-1">Details</a>
                 </div>
               </div>
-              <div class="card bg-body-secondary " style="width: 18rem; height: 21rem;">
+              <div class="card" style="width: 18rem; height: 21rem;">
                 <img src="./assets/Food_Fair.jpg" class="card-img-top rounded-4 p-2" alt="...">
                 <div class="card-body">
                   <h5 class="card-title">Título</h5>
@@ -154,7 +164,7 @@
                   <a href="./details.html" class="btn btn-secondary position-absolute bottom-1 end-1">Details</a>
                 </div>
               </div>
-              <div class="card bg-body-secondary " style="width: 18rem; height: 21rem;">
+              <div class="card" style="width: 18rem; height: 21rem;">
                 <img src="./assets/Marathon.jpg" class="card-img-top rounded-4 p-2" alt="...">
                 <div class="card-body">
                   <h5 class="card-title">Título</h5>
@@ -163,7 +173,7 @@
                   <a href="./details.html" class="btn btn-secondary position-absolute bottom-1 end-1">Details</a>
                 </div>
               </div>
-              <div class="card bg-body-secondary" style="width: 18rem; height: 21rem;">
+              <div class="card" style="width: 18rem; height: 21rem;">
                 <img src="./assets/Museum_Tour.jpg" class="card-img-top rounded-4 p-2" alt="...">
                 <div class="card-body">
                   <h5 class="card-title">Título</h5>
@@ -172,7 +182,7 @@
                   <a href="./details.html" class="btn btn-secondary position-absolute bottom-1 end-1">Details</a>
                 </div>
               </div>
-              <div class="card bg-body-secondary" style="width: 18rem; height: 21rem;">
+              <div class="card" style="width: 18rem; height: 21rem;">
                 <img src="./assets/Music_Concert.jpg" class="card-img-top rounded-4 p-2" alt="...">
                 <div class="card-body">
                   <h5 class="card-title">Título</h5>
@@ -183,6 +193,7 @@
               </div>
             </div>
           </div>
+        </div>
       </section>
     </main>
     <footer class="p-3 mb-2 bg-success p-2 text-dark bg-opacity-10 text-emphasis-secondary">

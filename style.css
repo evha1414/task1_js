@@ -11,9 +11,9 @@ header img{
     height: 50px;
 }
 
-main{
-    min-height: 90vh;
-    
+body {
+    width: 100%!important;
+    overflow-x: hidden!important;
 }
 
 .card img{
@@ -28,13 +28,11 @@ main{
     order: 1;
 }*/
 
-.table{
-    margin: 6rem auto;
-    width: 70%;
+/*.table{
     text-align: left;
     border: 2px solid black;
     font-size: 100%;
-}
+}*/
 
 tr td{
     font-size: 80%;

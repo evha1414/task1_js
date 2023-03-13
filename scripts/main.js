@@ -18,7 +18,7 @@ function crearTarjetas(arrayDatos){
       <a href="./details.html?_id=${events._id}" class="btn btn-outline-secondary position-absolute bottom-0 end-0">Details</a>
       </div>
     </div>
-  `
+    `
     }
 return tarjetas;
   }
@@ -26,6 +26,7 @@ return tarjetas;
 function details(_id){
     window.location.href = `./details.html?id=${_id}`
   }
+
 
 /* Fltrar con botón */
 let boton = document.getElementById("boton");
@@ -46,8 +47,8 @@ boton.addEventListener("click",function(){
  });
 });
 
-deburguer;
-function search() {
+
+function search(){
   let filter = document.getElementById("find").value.toUpperCase();
 
   let item = document.querySelectorAll(".card");
@@ -68,5 +69,4 @@ function search() {
   }
   }
 }
-
 

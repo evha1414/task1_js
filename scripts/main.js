@@ -28,45 +28,25 @@ function details(_id){
   }
 
 
-/* Fltrar con botón */
-let boton = document.getElementById("boton");
+ /* const search = document.getElementById("search");
+  const categories = document.getElementById("category")
+/*function crearChechbox(events, contenedor){
+  let fn = events => events.category
+  let categories = new Set(events.map(fn))
+  categories.forEach(valores => {
+    contenedor.innerHTML += `
+    <label for="${valores}">
+      <input id="valores" type="checkbox" name="position1" value="${category}">
+  </label>
+    `
+  })
+}
 
-let lista = document.getElementById("lista");
+  
+/*const boton = document.getElementById("boton");
 
-let checks = document.querySelectorAll(".valores");
+function filter(){
 
-boton.addEventListener("click",function(){
- lista.innerHTML = "";
- checks.forEach((elemento)=>{
-  if(elemento.checked == true){
-    let elemento = document.createElement("li");
-    elemento.className = "list-group-item";
-    elemento.innerHTML = e.value;
-    lista.appendChild(elemento);
-  }
- });
-});
-
-
-function search(){
-  let filter = document.getElementById("find").value.toUpperCase();
-
-  let item = document.querySelectorAll(".card");
-
-  let l = document.getElementsByTagName("h5");
-
-  for(let i = 0;i<=l.length;i++){
-    let a=item[i].getElementsByTagName("h5")[0];
-
-    let value=a.innerHTML || a.innerText || a.textContent;
-
-    if(value.toUpperCase().indexOf(filter) > -1) {
-      item[i].style.display="";
-    }
-    else
-  {
-    item[i].style.display="none";
-  }
-  }
+  let filterSearch.filter(iteracion => iteracion.name.toLowerCase().includes(search.value.toLowerCase()))
 }
 

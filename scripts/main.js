@@ -15,7 +15,7 @@ function crearTarjetas(arrayDatos){
       <p class="fst-italic fs-5">${events.date}</p>
       <p class="fst-italic fs-6">${events.description}</p>
       <p class="fw-bold">$${events.price}</p>
-      <a href="./details.html?_id=${events._id}" class="btn btn-outline-secondary position-absolute bottom-0 end-0">Details</a>
+      <a href="./details.html" class="btn btn-outline-secondary position-absolute bottom-0 end-0">Details</a>
       </div>
     </div>
     `
@@ -23,50 +23,4 @@ function crearTarjetas(arrayDatos){
 return tarjetas;
   }
 
-function details(_id){
-    window.location.href = `./details.html?id=${_id}`
-  }
-
-
-/* Fltrar con botón */
-let boton = document.getElementById("boton");
-
-let lista = document.getElementById("lista");
-
-let checks = document.querySelectorAll(".valores");
-
-boton.addEventListener("click",function(){
- lista.innerHTML = "";
- checks.forEach((elemento)=>{
-  if(elemento.checked == true){
-    let elemento = document.createElement("li");
-    elemento.className = "list-group-item";
-    elemento.innerHTML = e.value;
-    lista.appendChild(elemento);
-  }
- });
-});
-
-
-function search(){
-  let filter = document.getElementById("find").value.toUpperCase();
-
-  let item = document.querySelectorAll(".card");
-
-  let l = document.getElementsByTagName("h5");
-
-  for(let i = 0;i<=l.length;i++){
-    let a=item[i].getElementsByTagName("h5")[0];
-
-    let value=a.innerHTML || a.innerText || a.textContent;
-
-    if(value.toUpperCase().indexOf(filter) > -1) {
-      item[i].style.display="";
-    }
-    else
-  {
-    item[i].style.display="none";
-  }
-  }
-}
 

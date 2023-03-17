@@ -1,11 +1,3 @@
-/* Obtenemos los datos de los parámetros de la URL */
-let params = new URLSearchParams(document.location.search);
-let id = params.get("_id");
-
-/* Buscar dato por id */
-let cards = (data.events).filter(events => events._id == id);
-
-/* Renderizar */
 const container = document.getElementById("container-details");
 let html = "";
 
